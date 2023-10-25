@@ -1,0 +1,86 @@
+*{
+  font-family: Arial,  sans-serif;
+  box-sizing:border-box;
+ }
+ 
+ .body {
+  display:flex;
+  background-color: azure;
+ }
+ 
+ .container {
+  width: auto;
+  margin:30px auto;
+  padding:10px; 
+  min-height:500px;
+  text-align:center;
+  color:lightslategrey;
+  background-color: rgb(223, 242, 236);
+  border-radius: 10px;
+ }
+ 
+ .frases {
+  width:fit-content;
+  margin: 20px auto;
+  padding:8px;
+  border-radius: 10px;
+  border: 2px solid silver;
+  color:gray;
+  background-color: azure;  
+ }
+ 
+ button {
+  border-radius: 10px;
+  border: 2px solid grey;
+  padding: 5px;
+  margin:8px;
+  font-size: 1em;
+  background-color: azure;
+  color:grey;
+  cursor: pointer;
+  transition: border-color 0.25s;
+ }
+ 
+ button:hover {
+  border-color: grey;
+ }
+ 
+ .richtig {
+  font-size: 1.25em;
+  border: 2px solid grey;
+  color:white;
+  background-color: limegreen;
+ }
+ 
+ .falsch {
+  font-size: 1.25em;
+  border: 2px solid grey;
+  color:white;
+  background-color: tomato;
+ }
+ 
+ .nxtBtn {
+  border-radius: 10px;
+  border: 2px solid grey;
+  margin:8px;
+  font-size: 1.25em;
+  cursor: pointer;
+ }
+
+ .fas {
+  width:auto;
+  min-height:80px;
+  padding:8px;
+  margin:10px auto;
+  color:grey;
+  background-color: azure;  
+  border: 2px solid silver;
+  border-radius: 10px;
+  font-size:1.5em;
+  font-family:fontawesome, sans-serif;
+ }
+ 
+ .fas:focus {
+  border: 2px solid silver;
+  color:grey;
+ }
