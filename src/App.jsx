@@ -94,7 +94,7 @@ const handleReset = () => {
     <h3>Aufgabe {currentSätze + 1} / {Sätze.length}</h3>
   
     <div className="frases">
-      <h2>{Sätze[currentSätze].aufgabe}</h2>
+      <h3>{Sätze[currentSätze].aufgabe}</h3>
     </div>
 
     
@@ -103,7 +103,7 @@ const handleReset = () => {
       <textarea
       className="fas" 
       required 
-      placeholder={"Schreibe hier deine Umformung und dann  " + '\u23CE'}
+      placeholder={"deine Umformung  " + '\u23CE'}
       value={textarea}
       onKeyDown={handleKeyDown}
       onChange={handleChange}
@@ -151,7 +151,7 @@ const handleReset = () => {
         <button className="nxtBtn"
         type="submit"
         onClick={handleNextSätze}>
-        {currentSätze < Sätze.length -1 ? <FaArrowRight />:'wiederholen'}
+        {currentSätze < Sätze.length -1 ? <FaArrowRight/>:'wiederholen'}
         </button>
         }
 

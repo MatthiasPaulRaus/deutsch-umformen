@@ -1,42 +1,37 @@
 *{
   font-family: Arial,  sans-serif;
   box-sizing:border-box;
+  color:lightslategrey;
  }
  
  .body {
-  display:flex;
   background-color: azure;
  }
  
  .container {
-  width: auto;
-  margin:30px auto;
+  max-width:fit-content;
   padding:10px; 
-  min-height:500px;
+  margin:auto;
   text-align:center;
-  color:lightslategrey;
   background-color: rgb(223, 242, 236);
   border-radius: 10px;
  }
  
  .frases {
-  width:fit-content;
   margin: 20px auto;
   padding:8px;
   border-radius: 10px;
   border: 2px solid silver;
-  color:gray;
   background-color: azure;  
  }
  
  button {
   border-radius: 10px;
-  border: 2px solid grey;
+  border: 2px solid lightslategrey;
   padding: 5px;
   margin:8px;
   font-size: 1em;
   background-color: azure;
-  color:grey;
   cursor: pointer;
   transition: border-color 0.25s;
  }
@@ -68,19 +63,18 @@
  }
 
  .fas {
-  width:auto;
-  min-height:80px;
+  max-width:96%;
   padding:8px;
   margin:10px auto;
-  color:grey;
+  color:lightslategrey;
   background-color: azure;  
   border: 2px solid silver;
   border-radius: 10px;
-  font-size:1.5em;
+  font-size:1.25em;
   font-family:fontawesome, sans-serif;
+  text-align: center;
  }
  
  .fas:focus {
   border: 2px solid silver;
-  color:grey;
  }
