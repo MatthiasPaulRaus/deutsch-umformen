@@ -1,5 +1,5 @@
 *{
-  font-family: Arial,  sans-serif;
+  font-family: Arial, sans-serif;
   box-sizing:border-box;
   color:lightslategrey;
  }
@@ -10,71 +10,64 @@
  
  .container {
   max-width:fit-content;
+  min-height:fit-content;
   padding:10px; 
   margin:auto;
   text-align:center;
-  background-color: rgb(223, 242, 236);
-  border-radius: 10px;
+  background-color:rgb(223, 242, 236);
+  border-radius:10px;
  }
  
  .frases {
-  margin: 20px auto;
+  margin:10px;
   padding:8px;
-  border-radius: 10px;
-  border: 2px solid silver;
-  background-color: azure;  
+  border-radius:10px;
+  border:2px solid silver;
+  background-color:azure;
  }
  
+ .fas {
+  max-width:96%;
+  min-height:80px;
+  padding:8px;
+  margin:10px auto;
+  border:2px solid silver;
+  border-radius:10px;
+  font-size:1.25em;
+  font-family:Arial, sans-serif;
+  text-align:center;
+ }
+
  button {
-  border-radius: 10px;
-  border: 2px solid lightslategrey;
-  padding: 5px;
+  border-radius:10px;
+  border:2px solid lightslategrey;
+  padding:5px;
   margin:8px;
-  font-size: 1em;
-  background-color: azure;
-  cursor: pointer;
-  transition: border-color 0.25s;
- }
- 
- button:hover {
-  border-color: grey;
+  font-size:1.25em;
+  background-color:azure;
+  cursor:pointer;
+  transition:border-color 0.25s;
  }
  
  .richtig {
-  font-size: 1.25em;
-  border: 2px solid grey;
+  font-size:1.25em;
+  border: 2px solidgrey;
   color:white;
-  background-color: limegreen;
+  background-color:limegreen;
  }
  
  .falsch {
-  font-size: 1.25em;
-  border: 2px solid grey;
+  font-size:1.25em;
+  border: 2px solidgrey;
   color:white;
-  background-color: tomato;
+  background-color:tomato;
  }
  
  .nxtBtn {
-  border-radius: 10px;
-  border: 2px solid grey;
+  border-radius:10px;
+  border:2px solid grey;
   margin:8px;
-  font-size: 1.25em;
-  cursor: pointer;
- }
-
- .fas {
-  max-width:96%;
-  padding:8px;
-  margin:10px auto;
-  color:lightslategrey;
-  background-color: azure;  
-  border: 2px solid silver;
-  border-radius: 10px;
   font-size:1.25em;
-  font-family:fontawesome, sans-serif;
-  text-align: center;
- }
- 
- .fas:focus {
-  border: 2px solid silver;
+  font-family: Arial, sans-serif;
+  cursor:pointer;
  }

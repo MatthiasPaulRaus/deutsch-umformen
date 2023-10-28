@@ -25,18 +25,8 @@ const [openListComponent, setOpenListComponent] = useState(false)
 
 
 
-const handleKeyDown = (e) => {
-  if(e.key === "Enter"){
-    setInfo(true)
-  }
-  
-  else{
-    setInfo(false)
-    setSubmitted(false)
-  }
-  
-
-  
+const handleCheck= (e) => {
+  setInfo(true)
 
   if(textarea === Sätze[currentSätze].antwort 
     || textarea === Sätze[currentSätze].variante){
@@ -45,9 +35,7 @@ const handleKeyDown = (e) => {
   }
   else{
   setValid(false)
-  
   }
-  
   setSubmitted(true)
   e.target.disabled = false
 }
@@ -58,7 +46,6 @@ setTextarea(event.target.value)
 
 const handleSubmitted = (event) => {
 event.preventDefault()
-
 }
 
 const handleNextSätze = () => {
@@ -97,25 +84,23 @@ const handleReset = () => {
       <h3>{Sätze[currentSätze].aufgabe}</h3>
     </div>
 
-    
     <form onSubmit={handleSubmitted}>
     
       <textarea
       className="fas" 
       required 
-      placeholder={"deine Umformung  " + '\u23CE'}
+      placeholder={"deine Umformung"}
       value={textarea}
-      onKeyDown={handleKeyDown}
+      name="Umformung"
       onChange={handleChange}
       >
       </textarea>
-
-      
+ 
     </form>
 
-
-
-
+    <button
+    onClick={handleCheck} 
+    >check</button>
 
 
     {info &&
@@ -127,15 +112,15 @@ const handleReset = () => {
         <>
           <button className="falsch">falsch</button>
 
-          <button className="nxtBtn" type="reset"
-          onClick={handleReset}
-          >reset</button>
-      
- 
           <button className="nxtBtn"
           onClick={()=> setLösung(!lösung)}>  
           {lösung ? 'Lösung verbergen' : 'Lösung sehen'}
           </button>
+
+          <button className="nxtBtn" type="reset"
+          onClick={handleReset}
+          >reset</button>
+      
 
           {lösung && 
           <div>
@@ -145,7 +130,8 @@ const handleReset = () => {
           {Sätze[currentSätze].variante}
           </h4>
           </div>}    
-        </>}
+        </>
+        }
 
         {submitted && 
         <button className="nxtBtn"
@@ -169,7 +155,8 @@ const handleReset = () => {
       <br></br>
       <br></br>
       <br></br>
-
+      <br></br>
+      
       {new Date().getHours() >= 19 ?
       <h3>Guten Abend.</h3>:<h3>Guten Tag.</h3>}
 
