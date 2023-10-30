@@ -36,6 +36,12 @@
   font-size:1.25em;
   font-family:Arial, sans-serif;
   text-align:center;
+  
+ }
+
+ ::placeholder {
+  color: silver;
+  opacity:1;
  }
 
  button {

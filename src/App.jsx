@@ -89,7 +89,7 @@ const handleReset = () => {
       <textarea
       className="fas" 
       required 
-      placeholder={"deine Umformung"}
+      placeholder={"deine Umformung ..."}
       value={textarea}
       name="Umformung"
       onChange={handleChange}
